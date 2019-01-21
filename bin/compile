@@ -119,7 +119,7 @@ if [ ! -x "$CARGO_HOME/bin/rustc" ]; then
 fi
 
 eval $(ssh-agent -s)
-ssh-add
+ssh-add $HOME/.ssh/custom_key
 ssh-add -L
 
 # This is where we will cache our Rust output.  Note the suggestions at
